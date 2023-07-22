@@ -1,22 +1,23 @@
 # Table of Contents
-  Why should you learn MLOps?
-  Interview Question
-  2.1 What is the difference between MLOps, ModelOps, and AIOps?
-  2.2. What is the difference between MLOps and DevOps?
-  2.3. How do you create Infrastructure in MLOps?
-  2.4. How can you create CI/CD pipelines for Machine Learning?
-  2.5. What is model or concept drift?
-  2.6. How does monitoring differ from logging?
-  2.7. What testing should be done before deploying an ML model into production?
-  2.8. What is the A/B split approach of model evaluation?
-  2.9. What is the importance of using version control for MLOps?
-  2.10. What is the difference between A/B testing model deployment and Multi-Arm Bandit?
-  2.11. What is the difference between Canary and Blue-Green strategies of deployment?
-  2.12. Why would you monitor feature attribution rather than feature distribution?
-  2.13. What are the ways of packaging ML Models?
-  2.14. What is the concept of “immutable infrastructure”?
-  2.15. Mention some common issues involved in ML model deployment.
-  Conclusion
+
+  1. Why should you learn MLOps?
+  2. Interview Question
+    2.1.  What is the difference between MLOps, ModelOps, and AIOps?
+    2.2.  What is the difference between MLOps and DevOps?
+    2.3.  How do you create Infrastructure in MLOps?
+    2.4.  How can you create CI/CD pipelines for Machine Learning?
+    2.5.  What is model or concept drift?
+    2.6.  How does monitoring differ from logging?
+    2.7.  What testing should be done before deploying an ML model into production?
+    2.8.  What is the A/B split approach of model evaluation?
+    2.9.  What is the importance of using version control for MLOps?
+    2.10.  What is the difference between A/B testing model deployment and Multi-Arm Bandit?
+    2.11.  What is the difference between Canary and Blue-Green strategies of deployment?
+    2.12.  Why would you monitor feature attribution rather than feature distribution?
+    2.13.  What are the ways of packaging ML Models?
+    2.14.  What is the concept of “immutable infrastructure”?
+    2.15.  Mention some common issues involved in ML model deployment.
+  3.  Conclusion
 
 ## Why Should You Learn MLOps?
 Increased efficiency: MLOps allows for the automation and streamlining of ML model development and deployment, which can significantly increase the speed and efficiency of the process.
