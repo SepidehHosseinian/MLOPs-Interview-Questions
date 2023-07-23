@@ -2,21 +2,6 @@
 
   1. Why should you learn MLOps?
   2. Interview Question
-    2.1.  What is the difference between MLOps, ModelOps, and AIOps?
-    2.2.  What is the difference between MLOps and DevOps?
-    2.3.  How do you create Infrastructure in MLOps?
-    2.4.  How can you create CI/CD pipelines for Machine Learning?
-    2.5.  What is model or concept drift?
-    2.6.  How does monitoring differ from logging?
-    2.7.  What testing should be done before deploying an ML model into production?
-    2.8.  What is the A/B split approach of model evaluation?
-    2.9.  What is the importance of using version control for MLOps?
-    2.10.  What is the difference between A/B testing model deployment and Multi-Arm Bandit?
-    2.11.  What is the difference between Canary and Blue-Green strategies of deployment?
-    2.12.  Why would you monitor feature attribution rather than feature distribution?
-    2.13.  What are the ways of packaging ML Models?
-    2.14.  What is the concept of “immutable infrastructure”?
-    2.15.  Mention some common issues involved in ML model deployment.
   3.  Conclusion
 
 ## Why Should You Learn MLOps?
@@ -152,10 +137,203 @@ Managing model versions and dependencies
 Automating model training and deployment
 Monitoring model performance in production
 Dealing with data drift
-Conclusion
+
+### Q16. What Do You Mean By MLOps?
+The topic of operationalizing ML models is the focus of MLOps, also known as Machine Learning Operations, a developing field within the more major AI/DS/ML arena.
+
+The main goal of the software engineering approach and culture known as MLOps is to integrate the creation of machine learning/data science models and their subsequent operationalization (Ops).
+
+Conventional DevOps and MLOps share certain similarities, however, MLOps also differs greatly from traditional DevOps.
+
+MLOps adds a new layer of complexity by focusing on data, whereas DevOps primarily focuses on operationalizing code and software releases that cannot be stateful.
+
+The combination of ML, Data, and Ops is what gives MLOps its common name (machine learning, data engineering, and DevOps).
+
+### Q17. How Do Data Scientists, Data Engineers, And ML Engineers Vary From One Another?
+It varies, in my opinion, depending on the firm. The environment for the transportation and transformation of data, as well as its storage, is built up by data engineers.
+
+Data scientists are experts in utilizing scientific and statistical techniques to analyze data and draw conclusions, including making predictions about future behavior based on the trends that are now in place.
+
+Software engineers were studying operations and managing deployment infrastructure a few years ago. Ops teams, on the other hand, were studying development while using infrastructure as a code. A DevOps position was produced by these two streams.
+
+MLOps is in the same category as Data Scientist and Data Engineer. Data engineers are gaining knowledge about the infrastructure needed to support model lifecycles and create pipelines for ongoing training.
+
+Data scientists seek to develop their model deployment and scoring capabilities.
+
+A production-grade data pipeline is built by ML engineers utilizing the infrastructure that transforms raw data into the input needed by a data science model, hosts and runs the model, and outputs a scored dataset to downstream systems.
+
+Both data engineers and data scientists are capable of becoming ML engineers.
+
+### Q18. What Distinguishes MLOps From ModelOps And AIOps?
+When constructing end-to-end machine learning algorithms, MLOps is a DevOps application that includes data collection, data pre-processing, model creation, model deployment in production, model monitoring in production, and model periodic upgrade.
+
+The use of DevOps in handling the whole implementation of any algorithms, such as Rule-Based Models, is known as ModelOps.
+
+AIOps is leveraging DevOps principles to create AI apps from scratch.
+
+### Q19. Can You Tell Me Some Of The Benefits Of MLOps?
+Data scientists and MLOps developers can quickly rerun trials to ensure that models are trained and assessed appropriately since MLOps helps automate all or most of the tasks/steps in the MDLC (model development lifecycle). Additionally permits data and model versioning.
+Putting MLOps ideas into practice enables Data Engineers and Data Scientists to have unrestricted access to cultivated and curated datasets, which exponentially accelerates the development of models.
+Data scientists will be able to fall back on the model that performed better if the current iteration does not live up to expectations thanks to the ability to have models and datasets versioned, which will significantly enhance the model audit trail.
+As MLOps methods strongly rely on DevOps, they also incorporate a number of CI/CD concepts, which enhances the quality and dependability of the code.
+
+### Q20. Can You Tell Me The Components Of MLOps?
+Design: MLOps heavily include design thinking. Starting with the nature of the issue, testing hypotheses, architecture, and deployment
+
+Model building: Model testing and validation are part of this step, along with the data engineering pipelines and experimentation to set up the best machine learning systems.
+
+Operations: The model must be implemented as part of the operations and continually checked and evaluated. The CI/CD processes are then monitored and started using an orchestration tool.
+
+### Q21. What Risks Come With Using Data Science?
+It is difficult to scale the model across the company.
+Without warning, the model shuts down and stops functioning.
+Mostly, the accuracy of the models gets worse with time.
+The model makes inaccurate predictions based on a specific observation that cannot be further examined.
+Data scientists should also maintain models, but they are pricey.
+MLOps can be used to reduce these risks.
+
+### Q22. Can You Explain, What Is Model Drift?
+When a model’s inference phase performance (using real-world data) deteriorates from its training phase performance, this is known as model drift, also known as idea drift (using historical, labeled data).
+
+The model’s performance is skewed in comparison to the training and serving phases, hence the name “train/serve skew.”
+
+Numerous factors, including:
+
+The fundamental way that data are distributed has altered.
+The training focused on a small number of categories, however, an environmental shift that just took place added another area.
+In NLP difficulties, the real-world data has a disproportionately larger amount of number tokens than the training data.
+Unexpected occurrences, such as a model built on pre-COVID data being predicted to perform significantly worse on data collected during the COVID-19 epidemic.
+Continuously monitoring the model’s performance is always required to identify model drift.
+
+Model retraining is nearly always required as a remedy when there is a persistent decline in model performance; the reason for the decline must be identified and appropriate treatment procedures must be used.
+
+### Q23. How Many Different Ways May MLOps Be Applied, In Your Opinion?
+There are three methods for putting MLOps into practice:
+
+MLOps level 0 (Manual Process): In this level, all steps—including data preparation, analysis, and training—are performed manually. Each stage must be carried out manually, as well as the transition from one to the next.
+
+The underlying premise is that your data science team only manages a small number of models that aren’t updated frequently.
+
+As a result, there isn’t Continuous Integration (CI) or Continuous Deployment (CD), and testing the code is typically integrated into script execution or notebook execution, with deployment taking place in a microservice with a REST API.
+
+MLOps level 1 (automation of the ML pipeline): By automating the ML process, the objective is to continuously train the model (CT). You can accomplish continuous model prediction service delivery in this way.
+
+Our deployment of a whole training pipeline ensures that the model is automatically trained in production utilizing new data based on active pipeline triggers.
+
+MLOps level 2 (automation of the CI/CD pipeline): It goes one step above MLOps level. A strong automated CI/CD system is required if you want to update pipelines in production quickly and reliably:
+
+You create source code and execute numerous tests throughout the CI stage. Packages, executables, and artifacts are the stage’s outputs, which will be deployed at a later time.
+The artifacts created by the CI stage are deployed to the target environment during the CD step. A deployed pipeline with the revised model implementation is the stage’s output.
+Before the pipeline begins a new iteration of the experiment, data scientists must still do the data and model analysis phase manually.
+
+### Q24. What Separates Static Deployment From Dynamic Deployment?
+The model is trained offline for Static Deployment. In other words, we train the model precisely once and then utilize it for a time. After the model has been trained locally, it is stored and sent to the server to be used to produce real-time predictions.
+
+The model is then distributed as installable application software. a program that allows for batch scoring of requests, as an illustration.
+
+The model is trained online for Dynamic Deployment. That is, new data is constantly being added to the system, and the model is updated continuously to account for it.
+
+As a result, you can make predictions using a server on demand. After that, the model is put into use by being supplied as an API endpoint that reacts to user queries, using a web framework like Flask or FastAPI.
+
+### Q25. What Production Testing Techniques Are You Aware Of?
+Batch testing: By conducting testing in a setting different from that of its training environment, it verifies the model. Using metrics of choice, such as accuracy, RMSE, etc., batch testing is done on a group of data samples to verify model inference.
+
+Batch testing can be carried out on a variety of computing platforms, such as a test server, a remote server, or the cloud. Typically, the model is provided as a serialized file, which is loaded as an object and inferred from test data.
+
+A/B testing: It is frequently used for analyzing marketing campaigns as well as for the design of services (websites, mobile applications, etc.).
+
+Based on the company or operations, statistical approaches are used to analyze the results of A/B testing to decide which model will perform better in production. Usually, A/B testing is done in the following way:
+
+Live or real-time data is divided or segmented into two sets, Set A and Set B.
+Set A data is sent to the outdated model, while Set B data is sent to the updated model.
+Depending on the business use case or processes, several statistical approaches can be used to evaluate model performance (for example, accuracy, precision, etc.) to determine whether the new model (model B) outperforms the old model (model A).
+We then do statistical hypothesis testing: The null hypothesis says that the new model has no effect on the average value of the business indicators being monitored. According to the alternative hypothesis, the new model increases the average value of the monitoring business indicators.
+Finally, we assess if the new model results in a significant improvement in certain business KPIs.
+A shadow or stage test: A model is evaluated in a duplicate of a production environment before being used in production (staging environment).
+
+This is crucial for determining the model’s performance with real-time data and validating the model’s resilience. is carried out by inferring the same data as the production pipeline and delivering the developed branch or a model to be tested on a staging server.
+
+The sole drawback is that no business choices will be made on the staging server or visible to end users as a result of the development branch.
+
+The resilience and performance of the model will be assessed statistically using the results of the staging environment using the appropriate metrics.
+
+### Q26. What Distinguishes Stream Processing From Batch Processing?
+We can manipulate the characteristics that we utilize to produce our real-time forecasts using two processing methods: batch and stream.
+
+Batch process features from a prior point in time for a specific object, which is then utilized to generate real-time predictions.
+
+Here, we are able to do intensive feature calculations offline and have the data prepared for quick inference.
+Features, however, an age since they were predetermined in the past. This might be a major drawback if your prognosis is based on recent occurrences. (For instance, identifying fraudulent transactions as soon as feasible.)
+With near real-time, streaming features for a specific entity, the inference is carried out in stream processing on a given set of inputs.
+
+Here, by giving the model real-time, streaming features, we can get more accurate predictions.
+However, additional infrastructure is required for stream processing and to maintain data streams (Kafka, Kinesis, etc). (Apache Flink, Beam, etc.)
+
+### Q27. What Do You Mean By Training Serving Skew?
+The disparity between performance when serving and performance during training is known as the training-serving skew. This skew can be induced by the following factors:
+
+A difference in how you handle data between the pipelines for serving and training.
+A shift in the data from your training to your service.
+A feedback channel between your algorithm and model.
+
+### Q28. What Do You Mean By Model Registry?
+Model Registry is a central repository where model creators can publish models that are suitable for use in production.
+
+Developers can collaborate with other teams and stakeholders to manage the lifespan of all models inside the business using the registry. The trained models can be uploaded to the model registry by a data scientist.
+
+The models are prepared for testing, validation, and deployment to production once they are in the register. Additionally, trained models are stored in model registries for quick access by any integrated application or service.
+
+In order to test, evaluate, and deploy the model to production, software developers and reviewers can quickly recognize and choose just the best version of the trained models (based on the evaluation criteria).
+
+### Q29. Can You Elaborate On The Benefits Of Model Registry?
+The following are some ways that model registry streamlines model lifecycle management:
+
+To make deployment easier, save the runtime requirements and metadata for your trained models.
+Your trained, deployed, and retired models should be registered, tracked, and versioned in a centralized, searchable repository.
+Create automated pipelines that enable continuous delivery, training, and integration of your production model.
+Compare newly trained models (or challenger models) in the staging environment to models that are currently operating in production (champion models).
+
+### Q30. Can You Explain The Champion-Challenger Technique Works?
+It is possible to test various operational decisions in production using a Champion Challenger technique. You have probably heard about A/B testing in the context of marketing.
+
+For instance, you might write two distinct subject lines and distribute them at random to your target demographic in order to maximize the open rate for an email campaign.
+
+The system logs an email’s performance (i.e., email open action) in relation to its subject line, allowing you to compare each subject line’s open rate to determine which is the most effective.
+
+Champion-Challenger is comparable to A/B testing in this regard. You can use decision logic to evaluate each outcome and select the most effective one as you experiment with various methods to come to a choice.
+
+The most successful model correlates to the champion. The first challenger and the matching list of challengers are now all that is present in the first execution phase instead of the champion.
+
+The champion is chosen by the system for further job step executions.
+
+The challengers are contrasted with one another. The new champion is then determined by the challenger who produces the greatest results. 
+
+The tasks involved in the champion-challenger comparison process are listed below in more detail:
+
+Evaluating each of the rival models.
+Assessing the final scores.
+Comparing the evaluation outcomes to establish the victorious challenger.
+Adding the fresh champion to the archive
+### Q31. Describe The Enterprise-Level Applications Of The MLOps Lifecycle?
+We need to stop considering machine learning as only an iterative experiment in order for machine learning models to enter production. MLOps is the union of software engineering with machine learning.
+
+The finished result should be imagined as such. Therefore, the code for a technological product has to be tested, functional, and modular.
+
+MLOps has a lifespan that is comparable to a conventional machine learning flow, with the exception that the model is kept in the process until production.
+
+The MLOps Engineers then keep an eye on this to make sure the model quality in production is what is intended. 
+
+Here are some use-cases for several of the MLOps technologies:
+
+Model Registries: It is what it appears to be. Larger teams store and maintain track of version models in model registries. Even going back to a previous version is an option.
+Feature Store: When dealing with bigger data sets, there could be distinct versions of the analytical datasets and subsets for specific tasks. A feature store is a cutting-edge, tasteful way to use data preparation work from earlier runs or from other teams as well.
+Stores for Metadata: It is crucial to monitor metadata correctly throughout production if unstructured data, such as picture and text data, are to be used successfully.
+
+## Conclusion
 If you have been able to answer all the questions, then bravo! If not, there is nothing to be disheartened about. The real value of this blog is to understand these questions and to be able to generalize them when faced with similar questions in your next ML Interview! If you struggled with these questions, do not worry! Now is the time to sit down and prepare these concepts.
 
-Your key takeaways from this article would be:
+
+### Your key takeaways from this article would be:
 
 A concrete understanding of MLOps, ModelOps, and AIOps and how they differ from DevOps.
 How to create infrastructure and the CI/CD pipelines in MLOps
