@@ -384,6 +384,43 @@ Here are some links to learn more about why and how to package ML models:
 
 •  ML Model Packaging [The Ultimate Guide] - neptune.ai
 
+### Q35. What are the pros and cons of using Microservices?
+Microservices are a way of designing software applications as a collection of independent and loosely coupled services, each with its own functionality and responsibility. Microservices have some pros and cons, such as:
+
+•  Pros:
+
+•  Scalability: Microservices can scale up or down independently, according to the demand and resources available. This can improve the performance and efficiency of the application, as well as reduce the cost of scaling.
+
+•  Flexibility: Microservices can use different technologies, languages, frameworks, and platforms, as long as they can communicate with each other through standard interfaces. This can allow for more innovation, experimentation, and customization of the application.
+
+•  Reliability: Microservices can isolate failures and errors, and prevent them from affecting the whole application. This can improve the availability and resilience of the application, as well as facilitate fault detection and recovery .
+
+•  Maintainability: Microservices can be developed, tested, deployed, and updated independently, without affecting other services. This can enable faster delivery cycles, continuous integration and delivery (CI/CD), and agile development practices.
+
+•  Modularity: Microservices can decompose complex applications into smaller and simpler services, each with a clear boundary and responsibility. This can improve the readability, understandability, and reusability of the code, as well as reduce the coupling and dependency among services.
+
+•  Cons:
+
+•  Complexity: Microservices introduce more complexity to the application architecture, design, development, deployment, and management. They require more coordination, communication, integration, testing, monitoring, and security measures among services.
+
+•  Overhead: Microservices incur more overhead in terms of network latency, bandwidth consumption, data consistency, service discovery, load balancing, etc. They also require more infrastructure and resources to run and maintain multiple services.
+
+•  Skillset: Microservices require a high level of skill and expertise to implement and operate effectively. They involve using different technologies, tools, frameworks, platforms, protocols, etc., which may not be familiar or compatible with each other. They also require a good understanding of the domain logic, business requirements, and user needs.
+
+•  Trade-offs: Microservices involve making trade-offs between different aspects of the application quality attributes, such as performance, reliability, security, usability, etc. For example, increasing the scalability of a service may compromise its consistency or availability.
+
+•  Challenges: Microservices face some common challenges in their implementation and operation, such as data management, service orchestration, configuration management, logging and tracing, error handling, etc. These challenges may require using additional tools or frameworks to address them.
+
+Here are some links to learn more about microservices pros and cons:
+
+•  The disadvantages vs. benefits of microservices - Red Hat Developer
+
+•  Advantages and Disadvantages of Microservices Architecture - Cloud Academy
+
+•  Advantages and Disadvantages of Microservices - javatpoint
+
+•  The Advantages and Disadvantages of Microservices - Solace
+
 ## Conclusion
 If you have been able to answer all the questions, then bravo! If not, there is nothing to be disheartened about. The real value of this blog is to understand these questions and to be able to generalize them when faced with similar questions in your next ML Interview! If you struggled with these questions, do not worry! Now is the time to sit down and prepare these concepts.
 
