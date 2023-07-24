@@ -421,6 +421,28 @@ Here are some links to learn more about microservices pros and cons:
 
 •  The Advantages and Disadvantages of Microservices - Solace
 
+### Q36. What is a structure of a typical ML Artifact?
+A typical ML artifact is the output created by the training process, such as a fully trained model, a model checkpoint, or a file generated during the training process. An ML artifact can have different components or attributes, depending on the type and format of the artifact. For example, an ML model artifact can have components such as:
+
+•  Model file: This is the file that contains the trained model parameters or weights, such as a .h5 file for a Keras model or a .pt file for a PyTorch model.
+
+•  Model metadata: This is the information that describes the model, such as its name, version, description, architecture, input and output shapes, hyperparameters, metrics, etc.
+
+•  Model dependencies: This is the information that specifies the software and hardware requirements for running the model, such as the libraries, frameworks, packages, versions, etc.
+
+•  Model code: This is the source code that defines the model architecture and logic, such as a .py file for a Python script or a .ipynb file for a Jupyter notebook.
+
+•  Model artifacts: These are additional files that are related to the model, such as data files, configuration files, logs files, images, etc.
+
+An ML artifact can be stored and managed in different ways, such as using local or cloud storage, databases, repositories, or platforms. Some examples of ML artifact management systems are:
+
+•  ML metadata artifact types | Vertex AI | Google Cloud
+
+•  Management of Machine Learning Lifecycle Artifacts: A Survey - arXiv.org
+
+•  Artifacts - AI Wiki - Paperspace
+
+
 ## Conclusion
 If you have been able to answer all the questions, then bravo! If not, there is nothing to be disheartened about. The real value of this blog is to understand these questions and to be able to generalize them when faced with similar questions in your next ML Interview! If you struggled with these questions, do not worry! Now is the time to sit down and prepare these concepts.
 
