@@ -346,6 +346,44 @@ Here are some links to learn more about how to monitor the performance of an ML 
 
 •  How to Monitor ML Models in Production - Deepchecks
 
+### Q33. Can you discuss an example with data drift and how can addressed it?
+An example of data drift and how to address it is:
+
+•  Anti-spam model: Suppose that you work for a social app and are responsible for maintaining an anti-spam service. On this platform, you have one model that uses several features to predict whether a user is a spammer or not. It is very accurate and keeps the platform free of pesky spammers.
+
+•  Data drift: However, over time, the spammers become more sophisticated and change their behavior and tactics. For example, they may use different words, emojis, or hashtags to avoid detection. This causes the distribution of the input data to change, and the model becomes less accurate at identifying spammers.
+
+•  Addressing data drift: To address data drift, you need to monitor the performance of the model and the quality of the data over time, using metrics such as accuracy, precision, recall, F1-score, etc. You also need to collect new data that reflects the current behavior of the spammers and retrain the model on this data. Alternatively, you can use weighting or sampling techniques to adjust the distribution of the training data to match the distribution of the new data.
+
+Here are some links to learn more about data drift and how to address it:
+
+•  Understanding Data Drift and Model Drift: Drift Detection in Python | DataCamp
+
+•  Data Drift: The Problem and Strategies To Address It|Data Drift: The Problem and Strategies To Address It|Data Drift: The Problem and Strategies To Address It Domain Drift: The Problem and Strategies To Address It - Datagen
+
+•  Understand and Handling Data Drift and Concept Drift - Explorium
+
+### Q34. Why you should package ML models?
+You should package ML models because packaging ML models into software artifacts enables them to be shipped or transported from one environment to another, such as from a development environment to a production environment. This can simplify the process of deploying and maintaining ML models, as well as ensure their reproducibility and consistency.
+
+Packaging ML models can also enable them to be served in real time for ML inference, which is the process of processing real-time data using ML models to calculate an output, such as a prediction or numerical score. Packaging ML models can allow them to be deployed in various runtime environments, such as in a virtual machine, a container, a serverless environment, a streaming service, a microservice, or a batch service.
+
+Some of the common ways of packaging ML models are:
+
+•  Serialized files: This is the simplest way of packaging ML models, which involves saving the model parameters or weights into a file format that can be loaded and used by the same or compatible framework or library. For example, you can save a Keras model into a .h5 file or a PyTorch model into a .pt file.
+
+•  Containers: This is a more advanced way of packaging ML models, which involves creating an isolated and portable environment that contains the model and all its dependencies, such as libraries, frameworks, packages, configurations, etc. For example, you can use Docker or Kubernetes to create and run containers that can host your ML models.
+
+•  Frameworks: This is a specialized way of packaging ML models, which involves using specific tools or platforms that are designed for building, deploying, and managing ML models. For example, you can use TensorFlow Serving, PyTorch Serve, MLflow, or Seldon Core to package and serve your ML models.
+
+Here are some links to learn more about why and how to package ML models:
+
+•  Why package ML models? | Engineering MLOps - Packt Subscription
+
+•  Packaging ML Models: Web Frameworks and MLOps - neptune.ai
+
+•  ML Model Packaging [The Ultimate Guide] - neptune.ai
+
 ## Conclusion
 If you have been able to answer all the questions, then bravo! If not, there is nothing to be disheartened about. The real value of this blog is to understand these questions and to be able to generalize them when faced with similar questions in your next ML Interview! If you struggled with these questions, do not worry! Now is the time to sit down and prepare these concepts.
 
